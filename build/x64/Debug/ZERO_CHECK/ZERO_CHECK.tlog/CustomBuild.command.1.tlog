@@ -1,0 +1,10 @@
+^C:\USERS\LIURU\DROPBOX\MYWEBSITE\OPENRECON\BUILD\CMAKEFILES\E19EE9BD3602E1EEE14A8937AADDADB0\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/liuru/Dropbox/MyWebsite/OpenRecon -BC:/Users/liuru/Dropbox/MyWebsite/OpenRecon/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/liuru/Dropbox/MyWebsite/OpenRecon/build/OPENRECON.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

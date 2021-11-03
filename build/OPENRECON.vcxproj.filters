@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\Example.cpp">
+    <ClCompile Include="C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\Example.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\Example.hpp">
+    <ClInclude Include="C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\Example.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{FAD7FAAE-69BA-3DBF-844A-36DBBF58BB8F}</UniqueIdentifier>
+      <UniqueIdentifier>{9C8759A1-7DF7-3753-AD78-2C0357EE47CF}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{E13C1A94-44D6-3131-9A65-46B19D81A3CB}</UniqueIdentifier>
+      <UniqueIdentifier>{9C528F24-1744-39BE-8B46-AF27713AC2F0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/liuru/Dropbox/MyWebsite/OpenRecon/test
+# Install script for directory: C:/Users/liuru/OneDrive/Research/NewProject/OpenRecon/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/OPENRECON")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files/OPENRECON")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

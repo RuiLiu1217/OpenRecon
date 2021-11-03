@@ -22,8 +22,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{A5BC1D83-6710-3D5B-9B60-4B2B39BE5540}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <ProjectGuid>{82EFB59F-996C-31F2-856B-89B3519B196F}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>ALL_BUILD</ProjectName>
@@ -66,7 +66,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\include;C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\include;C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -76,7 +76,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\include;C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\include;C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -86,7 +86,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\include;C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\include;C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -96,7 +96,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\include;C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\include;C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -105,10 +105,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/liuru/Dropbox/MyWebsite/OpenRecon/googletest/googletest/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/liuru/OneDrive/Research/NewProject/OpenRecon/googletest/googletest/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/liuru/Dropbox/MyWebsite/OpenRecon -BC:/Users/liuru/Dropbox/MyWebsite/OpenRecon/build --check-stamp-file C:/Users/liuru/Dropbox/MyWebsite/OpenRecon/build/googletest/googletest/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/liuru/OneDrive/Research/NewProject/OpenRecon -BC:/Users/liuru/OneDrive/Research/NewProject/OpenRecon/build --check-stamp-file C:/Users/liuru/OneDrive/Research/NewProject/OpenRecon/build/googletest/googletest/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -116,12 +117,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\cmake\Config.cmake.in;C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\cmake\gtest.pc.in;C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\cmake\gtest_main.pc.in;C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\cmake\internal_utils.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\build\googletest\googletest\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\cmake\Config.cmake.in;C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\cmake\gtest.pc.in;C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\cmake\gtest_main.pc.in;C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\cmake\internal_utils.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\build\googletest\googletest\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/liuru/Dropbox/MyWebsite/OpenRecon/googletest/googletest/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/liuru/OneDrive/Research/NewProject/OpenRecon/googletest/googletest/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/liuru/Dropbox/MyWebsite/OpenRecon -BC:/Users/liuru/Dropbox/MyWebsite/OpenRecon/build --check-stamp-file C:/Users/liuru/Dropbox/MyWebsite/OpenRecon/build/googletest/googletest/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/liuru/OneDrive/Research/NewProject/OpenRecon -BC:/Users/liuru/OneDrive/Research/NewProject/OpenRecon/build --check-stamp-file C:/Users/liuru/OneDrive/Research/NewProject/OpenRecon/build/googletest/googletest/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -129,12 +130,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\cmake\Config.cmake.in;C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\cmake\gtest.pc.in;C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\cmake\gtest_main.pc.in;C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\cmake\internal_utils.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\build\googletest\googletest\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\cmake\Config.cmake.in;C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\cmake\gtest.pc.in;C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\cmake\gtest_main.pc.in;C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\cmake\internal_utils.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\build\googletest\googletest\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/liuru/Dropbox/MyWebsite/OpenRecon/googletest/googletest/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/liuru/OneDrive/Research/NewProject/OpenRecon/googletest/googletest/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/liuru/Dropbox/MyWebsite/OpenRecon -BC:/Users/liuru/Dropbox/MyWebsite/OpenRecon/build --check-stamp-file C:/Users/liuru/Dropbox/MyWebsite/OpenRecon/build/googletest/googletest/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/liuru/OneDrive/Research/NewProject/OpenRecon -BC:/Users/liuru/OneDrive/Research/NewProject/OpenRecon/build --check-stamp-file C:/Users/liuru/OneDrive/Research/NewProject/OpenRecon/build/googletest/googletest/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -142,12 +143,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\cmake\Config.cmake.in;C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\cmake\gtest.pc.in;C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\cmake\gtest_main.pc.in;C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\cmake\internal_utils.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\build\googletest\googletest\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\cmake\Config.cmake.in;C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\cmake\gtest.pc.in;C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\cmake\gtest_main.pc.in;C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\cmake\internal_utils.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\build\googletest\googletest\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/liuru/Dropbox/MyWebsite/OpenRecon/googletest/googletest/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/liuru/OneDrive/Research/NewProject/OpenRecon/googletest/googletest/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/liuru/Dropbox/MyWebsite/OpenRecon -BC:/Users/liuru/Dropbox/MyWebsite/OpenRecon/build --check-stamp-file C:/Users/liuru/Dropbox/MyWebsite/OpenRecon/build/googletest/googletest/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/liuru/OneDrive/Research/NewProject/OpenRecon -BC:/Users/liuru/OneDrive/Research/NewProject/OpenRecon/build --check-stamp-file C:/Users/liuru/OneDrive/Research/NewProject/OpenRecon/build/googletest/googletest/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -155,26 +156,26 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\cmake\Config.cmake.in;C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\cmake\gtest.pc.in;C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\cmake\gtest_main.pc.in;C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\googletest\googletest\cmake\internal_utils.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\build\googletest\googletest\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.22\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\cmake\Config.cmake.in;C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\cmake\gtest.pc.in;C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\cmake\gtest_main.pc.in;C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\googletest\googletest\cmake\internal_utils.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\build\googletest\googletest\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\build\ZERO_CHECK.vcxproj">
-      <Project>{B232E01A-AE11-3A07-B493-EFEC8A4CA5D2}</Project>
+    <ProjectReference Include="C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\build\ZERO_CHECK.vcxproj">
+      <Project>{ECDF65EB-A502-3EF4-8730-6368A6D1AEC8}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\build\googletest\googletest\gtest.vcxproj">
-      <Project>{7658BC1F-AAF8-35A7-ABEE-DB23BCED9152}</Project>
+    <ProjectReference Include="C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\build\googletest\googletest\gtest.vcxproj">
+      <Project>{56F4A2FA-422E-3D42-8D96-296B16DED13D}</Project>
       <Name>gtest</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\liuru\Dropbox\MyWebsite\OpenRecon\build\googletest\googletest\gtest_main.vcxproj">
-      <Project>{DDF905BB-13E5-34DF-AEFE-FED213B4E496}</Project>
+    <ProjectReference Include="C:\Users\liuru\OneDrive\Research\NewProject\OpenRecon\build\googletest\googletest\gtest_main.vcxproj">
+      <Project>{9BED33AC-BA38-34B9-BD39-D7EC38D0103F}</Project>
       <Name>gtest_main</Name>
     </ProjectReference>
   </ItemGroup>

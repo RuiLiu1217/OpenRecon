@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/liuru/Dropbox/MyWebsite/OpenRecon/googletest
+# Install script for directory: C:/Users/liuru/OneDrive/Research/NewProject/OpenRecon/googletest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/OPENRECON")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files/OPENRECON")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/liuru/Dropbox/MyWebsite/OpenRecon/build/googletest/googlemock/cmake_install.cmake")
+  include("C:/Users/liuru/OneDrive/Research/NewProject/OpenRecon/build/googletest/googlemock/cmake_install.cmake")
 
 endif()
 

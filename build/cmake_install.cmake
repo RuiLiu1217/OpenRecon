@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/liuru/Dropbox/MyWebsite/OpenRecon
+# Install script for directory: C:/Users/liuru/OneDrive/Research/NewProject/OpenRecon
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/OPENRECON")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files/OPENRECON")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,12 +34,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/liuru/Dropbox/MyWebsite/OpenRecon/build/googletest/cmake_install.cmake")
+  include("C:/Users/liuru/OneDrive/Research/NewProject/OpenRecon/build/googletest/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/liuru/Dropbox/MyWebsite/OpenRecon/build/test/cmake_install.cmake")
+  include("C:/Users/liuru/OneDrive/Research/NewProject/OpenRecon/build/test/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/liuru/Dropbox/MyWebsite/OpenRecon/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/liuru/OneDrive/Research/NewProject/OpenRecon/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
